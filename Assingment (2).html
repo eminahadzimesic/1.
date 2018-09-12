@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assingment</title>
+</head>
+<body>
+	<form>
+        <label for="combobox">Izaberite mjesec:</label>
+        <select id="combobox" onchange="mjesec()">
+            <option value="Januar">Januar</option>
+            <option value="Frebruar">Februar</option>
+            <option value="Mart">Mart</option>
+            <option value="April">Apil</option>
+            <option value="Juni">Juni</option>
+            <option value="Juli">Juli</option>
+            <option value="August">August</option>
+            <option value="Septembar">Septembar</option>
+            <option value="Oktobar">Oktobar</option>
+            <option value="Novembar">Novembar</option>
+            <option value="Decembar">Decembar</option>
+        </select>
+    </form>
+<p>Izabrali ste:</p>
+<div id="div"></div>
+<script>
+	function mjesec() 
+	{
+		var mj=document.getElementById('combobox').value;
+		document.getElementById('div').innerHTML=""+mj;
+
+	}
+</script>
+</body>
+</html>
